@@ -1,5 +1,183 @@
 /* Your code here */
 
+.header-nav__container {
+  background-color: aquamarine;
+}
+
+/* Page-wide styles */
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Header Navigation Container */
+.header-nav__container {
+  background-color: #026AA7;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 4px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Header Navigation Group */
+.header-nav__group {
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.header-nav__button#alerts {
+  background-color: #CF513D;
+}
+
+@media screen and (max-width: 730px) {
+  .header-nav__button#search, .boards-label {
+    display: none;
+  }
+}
+
+/* Team Container */
+.team__container {
+  background-color: #f4f5f7;
+  padding: 32px;
+}
+
+/* Team Info */
+.team__info {
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+
+/* H1 elements that are a direct child of Team Info */
+.team__info > h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+/*  A elements that are descendants of Team Info */
+.team__info a {
+  color: #172b4d;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+/* Tabbed Navigation Container */
+.tabbed-nav__container {
+  background-color: #f4f5f7;
+}
+
+/* Tabbed Navigation Group */
+.tabbed-nav__group {
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tabbed Navigation Link */
+.tabbed-nav__link {
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d;
+}
+
+@media screen and (min-width: 501px) {
+  .tabbed-nav__group {
+    flex-direction: row;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabbed-nav__group, .tabbed-nav__link {
+    display: block;
+  }
+}
+
+/* Boards Container */
+.boards__container {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Boards Sidebar */
+.boards__sidebar {
+  background-color: #6C547B;
+  border-radius: 3px;
+  margin: 0 32px 32px 0;
+  padding: 0 20px 32px 20px;
+  max-height: 130px;
+  max-width: 180px;
+  width: 20%;
+  flex: 0 0 220px;
+}
+
+/* Title and A Elements in Boards Sidebar Content */
+.boards__sidebar-content .title,
+.boards__sidebar-content a {
+  color: white;
+}
+
+/* Description Elements in Boards Sidebar Content */
+.boards__sidebar-content .description {
+  color: lightblue;
+}
+
+/* Boards Group */
+.boards__group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+/* Boards Board */
+.boards__board {
+  background-color: hotpink;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+  height: 100px;
+  margin: 0 8px 16px;
+  max-width: 250px;
+  padding: 4px 8px;
+  position: relative;
+  color: white;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 751px) and (max-width: 1280px) {
+  .boards__board {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .boards__board {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+
+
 /* Supplied CSS follows. */
 .header-nav__group{
   display: flex;
